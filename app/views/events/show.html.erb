@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<table class="table table-sm">
+	<tr>  <th>Name</th>       <td><%= @event.name %>       </td></tr>
+  <tr>  <th>Date</th>       <td><%= @event.starts_at %>  </td></tr>
+  <tr>  <th>Spaces</th>     <td><%= @event.spaces %>     </td></tr>   
+  <tr>  <th>Published</th>  <td><%= @event.published %>  </td></tr>
+</table>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
